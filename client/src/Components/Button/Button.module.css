@@ -1,0 +1,21 @@
+.btn{ 
+    width: 180px;
+    height: 40px;
+    color: white;
+    border: none;
+    margin: 0 20px;
+}
+
+.themeOrange{ 
+
+    background: orange;
+}
+.themeGreen{ 
+    background: green;
+}
+.themeRed{ 
+    background: red;
+}
+.themeDefault{
+    background: black;
+}
