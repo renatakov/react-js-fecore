@@ -5,26 +5,25 @@ import './reset.css'
 import App from './App';
 let titlePage  = "Main Page";
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let initialStore = [
-  {
-      text: "Note 1",
-      theme: "orange"
-  },
-  {
-    text: "Note 2",
-      theme: "green"
-  },
-  {
-    text: "Note 3",
-      theme: "red"
+
+  const initialStore = { 
+    name: "Alex",
+    avatar: "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png",
+    description:"This is my page", 
+    post: [
+        {
+            time:"12.03",
+            text:"Hello World"
+        }
+    ]
   }
-]
-const rerender = (notesStore) => {
+
+const rerender = (store) => {
 
 root.render(
   <div>
 <App 
-notesStore = {notesStore}
+store = {store}
 rerender = {rerender}
 />
   </div>
