@@ -107,11 +107,9 @@ export const usersReducer = (state = initState, action) =>{
     }
 }
 
-export const createUserAC = ()=>(
-    {
+export const createUserAC = ()=>({
         type: CREATE_USER
-    }
-)
+    })
 
 export const updateNewUserAC = (inputForm, inputData) =>({
 type: UPDATE_NEW_USER,
@@ -119,9 +117,7 @@ inputForm,
 inputData
 })
 
-export const deleteUserAC = (idToDelete) =>(
-    {
+export const deleteUserAC = (idToDelete) =>({
         type: DELETE_USER,
         idToDelete
-    }
-)
+    })
