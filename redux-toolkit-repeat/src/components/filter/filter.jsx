@@ -1,12 +1,23 @@
 import Button from "../assets/Button/Button"
 import s from "./filter.module.scss"
 const Filter = (props) =>{
-    // console.log(props)
+    const handleClick = (newFilter) =>{
+        props.changeFilter(newFilter)
+    }
     return(
         <div className={s.filter}>
-            <Button isActive={true} text="All"/>
-            <Button text="Completed"/>
-            <Button text="Active"/>
+            <Button
+            handleClick={()=>{handleClick('all')}}
+            isActive={props.filter === 'all'} 
+            text="All"/>
+            <Button
+            handleClick={()=>{handleClick('completed')}}
+            isActive={props.filter === 'completed'} 
+            text="Completed"/>
+            <Button
+            handleClick={()=>{handleClick('active')}}
+            isActive={props.filter === 'active'} 
+            text="Active"/>
         </div>
     )
 }

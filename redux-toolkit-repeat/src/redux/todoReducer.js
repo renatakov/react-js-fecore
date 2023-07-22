@@ -12,7 +12,7 @@ const initialState = {
             status: "completed"
         }
     ],
-    filter: "all"
+    filter: "active"
 }
 
 export const changeFilterAC = createAction("task/change-filter", (newStatus)=>({
