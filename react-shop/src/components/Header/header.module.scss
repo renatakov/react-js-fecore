@@ -1,0 +1,15 @@
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: tomato;
+    column-gap: 20px;
+    &_link{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+    }
+}

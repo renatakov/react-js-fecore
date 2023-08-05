@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    &_item{
+        border: 2px solid tomato;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
