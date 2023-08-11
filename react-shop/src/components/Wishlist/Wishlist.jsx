@@ -21,7 +21,7 @@ const Wishlist = (props) => {
         <>
         <h1>Wishlist</h1>
         <div className={s.wishlistContainer}>
-        {renderProducts}
+        {renderProducts()}
         </div>
         </>
     )

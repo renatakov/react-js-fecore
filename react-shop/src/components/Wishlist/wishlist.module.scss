@@ -1,0 +1,10 @@
+.wishlistContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &_item{
+        border: 2px solid #ffae44;
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
