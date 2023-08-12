@@ -2,11 +2,7 @@ import { useState } from "react"
 import {useForm} from "react-hook-form"
 import s from "./reviewForm.module.scss"
 const ReviewForm = (props) => {
-    const [reviewInfo, setReviewInfo] = useState({
-        name: "",
-        email: "",
-        review: ""
-    })
+    const [reviewInfo, setReviewInfo] = useState({})
     const {form: errors, handleSubmit, register} = useForm()
     const onSubmit = (data) => {
         setReviewInfo({...data})
