@@ -5,7 +5,7 @@ const Modal = (props) => {
         <div className={s.container}>
             <div className={s.container_window}>
                 <div className={s.container_window_header}>
-                    <p className={s.container_window_header_text}>Modal Wih</p>
+                    <p className={s.container_window_header_text}>Modal Wish</p>
                 </div>
                 <div className={s.container_window_body}>
                     <p className={s.container_window_body_text}>Confirm Wish</p>

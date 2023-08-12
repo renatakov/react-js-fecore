@@ -29,6 +29,7 @@ const initialState = {
         }
     ],
     isModalOpen: false,
+    isReviewFormOpen: false,
     wishCandidate: null,
     wishlist:[]
 }
@@ -37,6 +38,10 @@ export const setWishlistCandidate = createAction("products/set-wishlist-candidat
     payload: idCandidate
 }))
 
+export const setReview = createAction("products/set-review")
+
+export const submitReview = createAction("products/submit-review")
+export const cancelReview = createAction("products/cancel-review")
 export const confirmWish = createAction("products/confirm-wish")
 export const cancelWish = createAction("products/cancel-wish")
 
@@ -52,6 +57,15 @@ const productsReducer = createReducer(initialState, (builder) => {
     builder.addCase(cancelWish, (state, action) => {
         state.isModalOpen = false
         state.wishCandidate = null
+    })
+    builder.addCase(setReview, (state)=>{
+        state.isReviewFormOpen = true
+    })
+    builder.addCase(submitReview, (state)=>{
+        state.isReviewFormOpen = false
+    })
+    builder.addCase(cancelReview, (state)=>{
+        state.isReviewFormOpen = false
     })
 })
 
