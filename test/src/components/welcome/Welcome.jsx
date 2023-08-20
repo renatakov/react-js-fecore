@@ -1,11 +1,11 @@
 const Welcome = (props) => {
-    if(props.username){
-        return(
-            <p>Welcome, {props.username}</p>
-        )
-    }
+    // if(props.username){
+    //     return(
+    //         <p>Welcome, {props.username}</p>
+    //     )
+    // }
     return(
-        <p>Welcome to home page</p>
+        <button onClick={props.handleClick}>Click</button>
     )
 }
 
